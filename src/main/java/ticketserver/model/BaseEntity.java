@@ -15,9 +15,6 @@ public class BaseEntity implements Serializable {
 
   private static final long serialVersionUID = 1L;
 
-  /**
-   * the auto-generated uuid of the entity
-   */
   @Id
   @GeneratedValue(generator = "uuid")
   @GenericGenerator(name = "uuid", strategy = "uuid2")
