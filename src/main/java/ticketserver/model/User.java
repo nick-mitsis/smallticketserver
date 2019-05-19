@@ -1,6 +1,5 @@
 package ticketserver.model;
 
-import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
@@ -16,14 +15,9 @@ import lombok.ToString;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Ticket extends BaseEntity {
+public class User extends BaseEntity{
 
   private static final long serialVersionUID = 1L;
-
-  private String title;
-  private String description;
-  private String status;
-  private User user;
-  private List<UserComments> userComments;
-
+  private String firstName;
+  private String lastName;
 }
