@@ -6,5 +6,4 @@ import ticketserver.model.BaseEntity;
 
 @Repository
 public interface BaseRepository<T extends BaseEntity, String> extends JpaRepository<T, String> {
-
 }
