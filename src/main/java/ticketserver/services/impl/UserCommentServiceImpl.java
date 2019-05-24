@@ -12,7 +12,7 @@ import ticketserver.services.UserCommentService;
 public class UserCommentServiceImpl extends BaseServiceImpl<UserComments>
     implements UserCommentService {
 
-  private final UserCommentsRepository<UserComments, String> userCommentsRepository;
+  private final UserCommentsRepository userCommentsRepository;
 
   @Override
   public UserComments getEntity(String id) {

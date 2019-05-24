@@ -10,7 +10,7 @@ import ticketserver.services.UserService;
 @Service
 @RequiredArgsConstructor
 public class UserServiceImpl extends BaseServiceImpl<User> implements UserService {
-  private final UserRepository<User, String> userRepository;
+  private final UserRepository userRepository;
 
   @Override
   public JpaRepository<User, String> getRepository() {
